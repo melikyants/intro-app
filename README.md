@@ -3,12 +3,12 @@
   - `cd my-app`
   - `yarn start`
   - Clean the App.js files, as it has some placholders
-  - 
+
 # Working with SCSS instead of CSS
   - `yarn add node-sass@4.14.1` the latest 5.0 has some issues with sass-loader, so for now 4.14.1
   -  `import index.scss` to the index.js
 
-# Creating Structures
+# Basic Structures
   - under `src` folder create 2 folder: Pages and Components
   - in components folder create new component by creating new folder Component1 and inside add index.js
   - each component has similar structure, must include always `import React from 'react` at the top of each file that react related

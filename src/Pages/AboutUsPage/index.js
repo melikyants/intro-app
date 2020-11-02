@@ -34,6 +34,9 @@ export const AboutUsPage = ()=>{
   // without [] - will run on each render
   //[someId] will run each time someId updated
 
+  const onSavePosts = (state)=>{
+    console.log('state',state)
+  }
 
   return(<div>
     <h1> About Us </h1>
@@ -41,7 +44,7 @@ export const AboutUsPage = ()=>{
     {showAnotherPage ?(<div>
     <Component1 text={textForComponent}/>
     <ComponentWithState initialCount={5}/>
-    {posts.length && <ComponentPosts title="About us" items={posts}/>}
+    {posts.length && <ComponentPosts title="About us" items={posts} onSave={onSavePosts}/>}
     </div>
     ) : <div>Another PAge rendered with a state </div>}
   </div>)
